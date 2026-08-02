@@ -1,8 +1,24 @@
 aid: ticketfly
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/ticketfly.png
 name: Ticketfly
-description: 'Ticketfly is a company surfaced as a portfolio company of sapphire-ventures and added to
-  the API Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Ticketfly was a San Francisco-based event-ticketing platform for independent music venues,
+  promoters, and festivals, founded in 2008. It was acquired by Eventbrite in 2017 and, following a June
+  2018 data breach, was shut down in November 2018 with its music-oriented features folded into Eventbrite
+  Music. The company is defunct: as of 2026 every Ticketfly host (www.ticketfly.com, developer.ticketfly.com)
+  returns HTTP 301 redirects to eventbrite.com. No independent Ticketfly API, developer portal, documentation,
+  or specification survives. This profile is retained as a historical/acquired-company record; there is no
+  live API surface to enrich.'
 url: https://raw.githubusercontent.com/api-evangelist/ticketfly/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +26,20 @@ x-backed-by:
 - sapphire-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: defunct
+x-acquired-by: eventbrite
+x-defunct-year: 2018
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Consumer
+- Events
+- Ticketing
+- Music
+- Defunct
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +49,10 @@ maintainers:
 common:
 - type: Website
   url: https://www.ticketfly.com/
+x-enrichment:
+  date: '2026-07-21'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
+  note: 'Defunct company (acquired by Eventbrite 2017, shut down 2018); all hosts 301-redirect
+    to eventbrite.com. No API surface to enrich.'
