@@ -66,6 +66,11 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: ParentCompany
+  url: https://apis.io/providers/eventbrite/
+  name: Eventbrite
+  x-relationship: acquired
+  x-evidence: "It was acquired by Eventbrite in 2017 and, following a June 2018 data breach, was shut down in November 2018 with its music-oriented features folded into Eventbrite Music."
 - type: Website
   url: https://www.ticketfly.com/
 x-enrichment:
